@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Bakso kadeudeuh</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Bakso Kadeudeuh</h1>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profil">Profil Usaha</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#testimoni">Testimoni</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <span class="hero-label">UMKM Kuliner Bakso</span>
+
+      <h2>Bakso kenyal, Daging Berasa,Kuah Gurihnya Bikin Nagih</h2>
+
+      <p>
+        Baso Kadeudeuh Hadir Dengan Bakso Kenyal, Kuah Gurih Spesial, Dan Rasa Nikmat DiSetiap  Suapan.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#menu" class="btn">Lihat Menu</a>
+        <a href="#kontak" class="btn-outline">Hubungi Kami</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img 
+        src="https://images.unsplash.com/photo-1625938145744-e38051539909?q=80&w=800" 
+        alt="Bakso"
+      />
+    </div>
+  </section>
+
+  <!-- PROFIL USAHA -->
+  <section class="profil-usaha" id="profil">
+    <div class="profil-container">
+
+      <div class="profil-image">
+        <img 
+          src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=900" 
+          alt="Profil Usaha Bakso"
+        />
+      </div>
+
+      <div class="profil-content">
+        <span class="label">Profil Usaha</span>
+
+        <h2>Bakso Kadeudeuh </h2>
+
+        <p>
+          Bakso Kadeudeuh adalah usaha kuliner lokal yang bergerak di bidang makanan dan minuman (Food & Beverage) dengan produk utama berupa bakso sapi premium. Usaha ini berlokasi di Karawang, Jawa Barat, sebuah wilayah yang dikenal sebagai pusat kawasan industri manufaktur terbesar di Indonesia. Nama "Kadeudeuh" berasal dari bahasa Sunda yang berarti kasih sayang atau rasa cinta, mencerminkan komitmen usaha dalam menyajikan setiap produk dengan ketulusan, kehangatan, dan perhatian penuh kepada pelanggan.
+        </p>
+
+        <p>
+          Usaha ini lahir dari kepedulian terhadap kebutuhan masyarakat Karawang akan pilihan kuliner berkualitas dengan harga yang terjangkau. Tagline yang diusung adalah "Cinta dalam Setiap Suapan, Hangat di Setiap Momen", yang merepresentasikan nilai emosional sekaligus fungsional dari produk yang ditawarkan. Filosofi brand ini menjadikan Bakso Kadeudeuh bukan sekadar bisnis makanan, melainkan sebuah pengalaman konsumsi yang bermakna dan berkesan bagi setiap pelanggannya.
+        </p>
+
+        <div class="profil-info">
+          <div class="info-box">
+            <h3>2023</h3>
+            <p>Tahun Berdiri</p>
+          </div>
+
+          <div class="info-box">
+            <h3>100+</h3>
+            <p>Pelanggan Puas</p>
+          </div>
+
+          <div class="info-box">
+            <h3>3</h3>
+            <p>Menu Favorit</p>
+          </div>
+        </div>
+
+        <a href="#kontak" class="btn">Hubungi Kami</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu-section" id="menu">
+    <h2>Menu Favorit</h2>
+    <p class="subtitle">Pilihan bakso terbaik untuk kamu</p>
+
+    <div class="menu-container">
+
+      <div class="menu-card">
+        <div class="badge">Favorit</div>
+
+        <img 
+          src="https://images.unsplash.com/photo-1625938145744-e38051539909?q=80&w=800" 
+          alt="Bakso Original"
+        />
+
+        <h3>Bakso Original</h3>
+
+        <p>
+          Bakso sapi dengan kuah gurih dan mie pilihan.
+        </p>
+
+        <span>Rp12.000</span>
+
+        <button onclick="pesanWhatsApp('Bakso Original')">
+          Pesan Sekarang
+        </button>
+      </div>
+
+      <div class="menu-card">
+        <div class="badge">Best Seller</div>
+
+        <img 
+          src="https://images.unsplash.com/photo-1612927601601-6638404737ce?q=80&w=800" 
+          alt="Bakso Urat"
+        />
+
+        <h3>Bakso Urat</h3>
+
+        <p>
+          Bakso urat kenyal dengan rasa daging yang mantap.
+        </p>
+
+        <span>Rp20.000</span>
+
+        <button onclick="pesanWhatsApp('Bakso Urat')">
+          Pesan Sekarang
+        </button>
+      </div>
+
+      <div class="menu-card">
+        <div class="badge">Pedas</div>
+
+        <img 
+          src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=800" 
+          alt="Bakso Mercon"
+        />
+
+        <h3>Bakso Mercon</h3>
+
+        <p>
+          Bakso pedas isi cabai untuk pecinta rasa pedas.
+        </p>
+
+        <span>Rp20.000</span>
+
+        <button onclick="pesanWhatsApp('Bakso Mercon')">
+          Pesan Sekarang
+        </button>
+      </div>
+
+      <div class="menu-card">
+        <div class="badge">Telor</div>
+
+        <img 
+          src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=800" 
+          alt="Bakso Telor"
+        />
+
+        <h3>Bakso Telor</h3>
+
+        <p>
+          Bakso Telor Favorit Dengan cita rasa autentik.
+        </p>
+
+        <span>Rp18.000</span>
+
+        <button onclick="pesanWhatsApp('Bakso Telor')">
+          Pesan Sekarang
+        </button>
+      </div>
+
+      <div class="menu-card">
+        <div class="badge">Rusuk</div>
+
+        <img 
+          src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=800" 
+          alt="Bakso Rusuk"
+        />
+
+        <h3>Bakso Rusuk</h3>
+
+        <p>
+          Bakso rusuk spesial dengan potongan rusuk pilihan.
+        </p>
+
+        <span>Rp23.000</span>
+
+        <button onclick="pesanWhatsApp('Bakso Rusuk')">
+          Pesan Sekarang
+        </button>
+      </div>
+
+      <div class="menu-card">
+        <div class="badge">Minuman</div>
+
+        <img 
+          src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=800" 
+          alt="Air mineral"
+        />
+
+        <h3>Air Mineral</h3>
+
+        <p>
+          
+        </p>
+
+        <span>Rp5.000</span>
+
+        <button onclick="pesanWhatsApp('Air mineral')">
+          Pesan Sekarang
+        </button>
+      </div>
+
+<div class="menu-card">
+        <div class="badge">Minuman Best seller</div>
+
+        <img 
+          src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=800" 
+          alt="Es Teh manis"
+        />
+
+        <h3>Es Teh manis</h3>
+
+        <p>
+          
+        </p>
+
+        <span>Rp5.000</span>
+
+        <button onclick="pesanWhatsApp('Es Teh manis')">
+          Pesan Sekarang
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section class="about" id="tentang">
+    <div>
+      <span class="label">Tentang Kami</span>
+
+      <h2>Kenapa Memilih Bakso Kami?</h2>
+
+      <p>
+        Baso Kadeudeuh hadir untuk menghadirkan cita rasa bakso khas yang lezat, hangat, dan penuh kenangan. 
+        Kami menggunakan bahan pilihan dengan racikan bumbu spesial untuk menghasilkan bakso yang kenyal, kuah gurih, dan rasa yang selalu bikin pelanggan kembali lagi.
+      </p>
+
+      <p>
+        Bagi kami, setiap mangkuk bakso bukan hanya soal rasa, 
+        tetapi juga tentang kebersamaan dan kenyamanan saat menikmati makanan bersama keluarga maupun teman.
+      </p>
+
+      <div class="keunggulan">
+        <div>
+          <h3>Higienis</h3>
+          <p>Dibuat dengan bahan bersih dan berkualitas.</p>
+        </div>
+
+        <div>
+          <h3>Harga Terjangkau</h3>
+          <p>Cocok untuk pelajar, keluarga, dan semua kalangan.</p>
+        </div>
+
+        <div>
+          <h3>Rasa Mantap</h3>
+          <p>Kuah gurih dan bakso kenyal bikin nagih.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONI -->
+  <section class="testimoni" id="testimoni">
+    <h2>Testimoni Pelanggan</h2>
+    <p class="subtitle">Apa kata mereka tentang bakso kami</p>
+
+    <div class="testimoni-container">
+
+      <div class="testimoni-card">
+        <div class="user-info">
+          <div class="avatar">E</div>
+
+          <div>
+            <h3>Elly Amelia</h3>
+            <span>Pelanggan</span>
+          </div>
+        </div>
+
+        <p>
+          “Baksonya enak banget, Dagingnya empuk mana banyak lagi dagingnya tebel,
+          mienya empuk, kuahnya beuuuh mantap, kaldunya mantep”
+        </p>
+
+        <div class="stars">★★★★★</div>
+      </div>
+
+      <div class="testimoni-card">
+        <div class="user-info">
+          <div class="avatar">D</div>
+
+          <div>
+            <h3>Dian</h3>
+            <span>Pelanggan</span>
+          </div>
+        </div>
+
+        <p>
+          “Baksonya enak, gurinya pas, sambelnya pedes, seger, bikin mau lagi.”
+        </p>
+
+        <div class="stars">★★★★★</div>
+      </div>
+
+      <div class="testimoni-card">
+        <div class="user-info">
+          <div class="avatar">V</div>
+
+          <div>
+            <h3>Vita</h3>
+            <span>Pelanggan</span>
+          </div>
+        </div>
+
+        <p>
+          “Enaknya puooll, nagih banget, kuahnya seger melimpah, baksonya empuk, worth it to buy.”
+        </p>
+
+        <div class="stars">★★★★★</div>
+      </div>
+
+    </div>
+  </section>
+
+ <!-- KONTAK -->
+<section class="contact" id="kontak">
+  <h2>Kontak Kami</h2>
+  <p class="subtitle">Pesan sekarang atau kunjungi sosial media kami</p>
+
+  <div class="contact-box">
+    <p><strong>Alamat:</strong> Jl. Suhud Hidayat No.01, RT.16, Indonesia</p>
+    <p><strong>WhatsApp:</strong> 0896-4846-4651 </p>
+    <p><strong>Jam Buka:</strong> 10.00 - 22.00 WIB</p>
+
+    <a 
+      href="https://wa.me/6289648464651?text=Halo%20saya%20ingin%20pesan%20bakso"
+      target="_blank"
+      class="btn"
+    >
+      Pesan via WhatsApp
+    </a>
+
+    <div class="social-media">
+      <h3>Ikuti Kami</h3>
+
+      <div class="social-icons">
+        <a 
+          href="https://instagram.com/widibaksokadeudeuh"
+          target="_blank"
+          class="social-link instagram"
+        >
+          <svg viewBox="0 0 24 24">
+            <path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5Zm8.75 2.25a1.25 1.25 0 1 1 0 2.5a1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10a5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6a3 3 0 0 0 0-6Z"/>
+          </svg>
+          <span>Instagram</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Bakso Kadeudeuh. Semua Hak Dilindungi.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
